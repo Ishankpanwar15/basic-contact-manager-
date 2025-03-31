@@ -34,7 +34,7 @@ print("first you have to feed some data:")
 print()
 people = []
 while True:
-    command = input("you can 'Add':").lower( )
+    command = input("you can 'Add' or 'Delete':").lower( )
 
     if command == "add":
         person = add_person()

@@ -27,7 +27,19 @@ def delete_contact(people):
 
     people.pop(number - 1)
     print("person deleted")
-        
+
+
+def search_person(people):
+    search_name = input("search for a name: ")
+    result = []
+
+    for person in people:
+        name = person["name"]
+        if search_name in name.lower():
+            result.append(person)
+
+
+    display_people(result )  
 
 print("Hii, welcome to the Contact Management System.")
 print("first you have to feed some data:")

@@ -55,6 +55,8 @@ while True:
         print("person added")
     elif command == "delete":
         delete_contact(people)
+    elif command == "search":
+        search_person(people)
     elif command == "q":
         break
     else:

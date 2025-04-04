@@ -41,6 +41,13 @@ def search_person(people):
 
     display_people(result )  
 
+def list_persons(people):
+    if len(people) == 0:
+        print("first you have to feed some contacts")
+    
+    
+    display_people(people)
+
 print("Hii, welcome to the Contact Management System.")
 print("first you have to feed some data:")
 print()

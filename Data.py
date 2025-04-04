@@ -53,8 +53,7 @@ print("first you have to feed some data:")
 print()
 people = []
 while True:
-    command = input("you can 'Add', 'search' or 'Delete' and 'Q' for quit:").lower( )
-
+    command = input("you can 'Add', 'Delete' , 'search' or 'list' and 'Q' for quit: ").lower( )
     if command == "add":
         person = add_person()
         people.append(person)
@@ -62,8 +61,10 @@ while True:
         print("person added")
     elif command == "delete":
         delete_contact(people)
-    elif command == "search":
+    elif command == "search":    
         search_person(people)
+    elif command == "list":
+        list_persons(people)
     elif command == "q":
         break
     else:
